@@ -6,11 +6,11 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-bxivhb iESyTA sc-bdVaJa cTyYxe"
+        class="sc-gzVnrw gnnuIE sc-bdVaJa cTyYxe"
       >
         <div
-          class="sc-bdVaJa bZTbev"
-          direction="column"
+          class="sc-bdVaJa eaciBL"
+          direction="row"
           width="90%"
         >
           <h1
@@ -23,17 +23,20 @@ Object {
               r
             </span>
           </h1>
+          <div
+            class="sc-bdVaJa iFGYfk"
+          />
         </div>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="sc-bxivhb iESyTA sc-bdVaJa cTyYxe"
+      class="sc-gzVnrw gnnuIE sc-bdVaJa cTyYxe"
     >
       <div
-        class="sc-bdVaJa bZTbev"
-        direction="column"
+        class="sc-bdVaJa eaciBL"
+        direction="row"
         width="90%"
       >
         <h1
@@ -46,6 +49,9 @@ Object {
             r
           </span>
         </h1>
+        <div
+          class="sc-bdVaJa iFGYfk"
+        />
       </div>
     </div>
   </div>,

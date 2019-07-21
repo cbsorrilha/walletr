@@ -3,12 +3,15 @@ import styled from 'styled-components';
 import FlexContainer from '../atoms/flex-container';
 import Logo from '../atoms/logo';
 import Wrapper from '../molecules/wrapper';
+import NavigationLink from '../molecules/navigation-link';
 
-const Navigation = ({ children }) => (
+const Navigation = ({ links = [] }) => (
   <NavigationWrapper alignItems="center" justify="space-between">
-    <Wrapper justify="center">
+    <Wrapper justify="center" direction="row" alignItems="center">
       <Logo />
-      {children}
+      <FlexContainer margin={{ left: "1.5rem" }} alignItems="center">
+        {links.map(({ ...props }, i) => <NavigationLink key={i} {...props} />)}
+      </FlexContainer>
     </Wrapper>
   </NavigationWrapper>
 );

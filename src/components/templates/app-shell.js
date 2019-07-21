@@ -2,9 +2,9 @@ import React from 'react';
 import Navigation from '../organisms/navigation';
 import Wrapper from '../molecules/wrapper';
 
-const AppShell = ({ children }) => (
+const AppShell = ({ children, navigation }) => (
   <div>
-    <Navigation />
+    <Navigation {...navigation} />
     <Wrapper>{children}</Wrapper>
   </div>
 );
