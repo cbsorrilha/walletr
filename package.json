@@ -1,0 +1,41 @@
+{
+  "name": "walletr",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Cesar de Barros <cbsorrilha@hotmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "parcel build ./src/index.html -d ./dist",
+    "start": "parcel ./src/index.html",
+    "lint": "eslint --ignore-pattern node_modules src",
+    "test": "jest",
+    "test:coverage": "jest --coverage"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "date-fns": "^1.30.0",
+    "pouchdb": "^7.1.1",
+    "react": "16.8.5",
+    "react-dom": "16.8.5",
+    "react-router-dom": "5.0.1",
+    "styled-components": "3.3.3"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "@testing-library/react": "^8.0.5",
+    "babel-eslint": "8.2.6",
+    "babel-jest": "^24.8.0",
+    "babel-loader": "7.1.5",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-polyfill": "6.26.0",
+    "eslint": "5.1.0",
+    "eslint-config-google": "0.9.1",
+    "eslint-plugin-import": "2.13.0",
+    "eslint-plugin-prettier": "2.6.2",
+    "eslint-plugin-react": "7.10.0",
+    "jest": "24.8.0",
+    "parcel-bundler": "1.12.3",
+    "prettier": "1.13.7"
+  }
+}

@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test the component helpers Test  the media helper should match the snapshots 1`] = `
+Object {
+  "desktop": 992,
+  "mobile": 576,
+  "tablet": 768,
+}
+`;
