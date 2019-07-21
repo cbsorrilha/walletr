@@ -1,5 +1,5 @@
-import React from 'react'
-import styled, { keyframes } from 'styled-components'
+import React from 'react';
+import styled, { keyframes } from 'styled-components';
 
 const motion = () => keyframes`
   0% {
@@ -13,7 +13,7 @@ const motion = () => keyframes`
   100% {
     transform: rotate(1800deg);
   }
-`
+`;
 
 const HourGlassSpinner = styled.div`
   display: inline-block;
@@ -32,16 +32,16 @@ const HourGlassSpinner = styled.div`
     border-color: ${p => p.color} transparent ${p => p.color} transparent;
     animation: ${p => motion(p)} 1.2s infinite;
   }
-`
+`;
 
 const LoadingIndicator = ({ color, size, sizeUnit }) => (
   <HourGlassSpinner color={color} size={size} sizeUnit={sizeUnit} />
-)
+);
 
 LoadingIndicator.defaultProps = {
   size: 64,
   color: '#00bfff',
-  sizeUnit: 'px'
-}
+  sizeUnit: 'px',
+};
 
-export default LoadingIndicator
+export default LoadingIndicator;

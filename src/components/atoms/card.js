@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 import PropTypes from 'prop-types';
 import { media, margin, padding } from '../helpers';
 
-const setMaxWidth = ({ maxWidth = "100%" }) => {
+const setMaxWidth = ({ maxWidth = '100%' }) => {
   switch (maxWidth) {
     case 'xs':
       return '50px';
@@ -50,7 +50,7 @@ const CardUI = styled.div`
 
   @media (min-width: ${media.tablet}px) {
     ${({ tablet = { width: false, height: false } }) =>
-    css`
+      css`
         ${cardStyles(tablet)};
         ${padding(tablet)};
         ${margin(tablet)};
@@ -60,7 +60,7 @@ const CardUI = styled.div`
   }
   @media (min-width: ${media.desktop}px) {
     ${({ desktop = { width: false, height: false } }) =>
-    css`
+      css`
         ${cardStyles(desktop)};
         ${padding(desktop)};
         ${margin(desktop)};

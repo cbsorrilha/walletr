@@ -37,7 +37,7 @@ const FlexItem = styled.div`
   ${border};
   @media (min-width: ${media.tablet}px) {
     ${({ tablet = { width: false, height: false } }) =>
-    css`
+      css`
         ${flexItemStyles(tablet)};
         ${padding(tablet)};
         ${margin(tablet)};
@@ -46,7 +46,7 @@ const FlexItem = styled.div`
   }
   @media (min-width: ${media.desktop}px) {
     ${({ desktop = { width: false, height: false } }) =>
-    css`
+      css`
         ${flexItemStyles(desktop)};
         ${padding(desktop)};
         ${margin(desktop)};

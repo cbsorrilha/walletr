@@ -15,7 +15,7 @@ const Navigation = ({ children }) => (
 
 const NavigationWrapper = styled(FlexContainer)`
   height: 3.5rem;
-  background-color: #FFF;
+  background-color: #fff;
   box-shadow: 0px 2px 8px 0px rgba(78, 78, 78, 1);
   margin-bottom: 2rem;
 `;

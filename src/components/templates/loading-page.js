@@ -7,5 +7,5 @@ export default function LoadingPage() {
     <Centralizer height="25rem">
       <LoadingIndicator color="#0db14b" />
     </Centralizer>
-  )
+  );
 }

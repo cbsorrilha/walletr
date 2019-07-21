@@ -14,7 +14,7 @@ const H2 = styled.h2`
   ${defaultRules};
 `;
 const H3 = styled.h3`
-  font-size: 1.50rem;
+  font-size: 1.5rem;
   ${defaultRules};
 `;
 const H4 = styled.h4`
@@ -32,15 +32,15 @@ const H6 = styled.h6`
 
 export default function Title({ hierarchy, ...props }) {
   switch (hierarchy) {
-    case "2":
+    case '2':
       return <H2 {...props} />;
-    case "3":
+    case '3':
       return <H3 {...props} />;
-    case "4":
+    case '4':
       return <H4 {...props} />;
-    case "5":
+    case '5':
       return <H5 {...props} />;
-    case "6":
+    case '6':
       return <H6 {...props} />;
     default:
       return <H1 {...props} />;

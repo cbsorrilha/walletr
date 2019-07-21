@@ -6,5 +6,5 @@ export default function Wrapper({ children, ...props }) {
     <FlexContainer direction="column" width="90%" margin="0 auto" {...props}>
       {children}
     </FlexContainer>
-  )
+  );
 }

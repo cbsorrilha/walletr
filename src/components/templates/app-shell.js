@@ -5,9 +5,7 @@ import Wrapper from '../molecules/wrapper';
 const AppShell = ({ children }) => (
   <div>
     <Navigation />
-    <Wrapper>
-      {children}
-    </Wrapper>
+    <Wrapper>{children}</Wrapper>
   </div>
 );
 

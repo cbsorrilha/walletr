@@ -9,12 +9,12 @@ export default function ErrorPage({ message, subMessage }) {
   return (
     <Centralizer>
       <JumboTitle align="center">Ops!</JumboTitle>
-      <FlexContainer margin={{ top: "2rem" }} direction="column">
+      <FlexContainer margin={{ top: '2rem' }} direction="column">
         <Text align="center">{message}</Text>
         <Text align="center">{subMessage}</Text>
       </FlexContainer>
     </Centralizer>
-  )
+  );
 }
 
 const JumboTitle = styled(Title)`

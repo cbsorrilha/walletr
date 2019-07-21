@@ -37,8 +37,8 @@ const TextUI = styled.p`
     ${({ tablet = initialTextProps }) => css`
       ${textStyles(tablet)};
       ${!tablet.size
-      ? ''
-      : css`
+        ? ''
+        : css`
             font-size: ${getFontSize(tablet)};
           `};
     `};
@@ -47,8 +47,8 @@ const TextUI = styled.p`
     ${({ desktop = initialTextProps }) => css`
       ${textStyles(desktop)};
       ${!desktop.size
-      ? ''
-      : css`
+        ? ''
+        : css`
             font-size: ${getFontSize(desktop)};
           `};
     `};

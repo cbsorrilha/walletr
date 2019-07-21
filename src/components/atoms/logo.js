@@ -3,8 +3,10 @@ import styled from 'styled-components';
 
 export default function Logo() {
   return (
-    <Title>Wallet<Green>r</Green></Title>
-  )
+    <Title>
+      Wallet<Green>r</Green>
+    </Title>
+  );
 }
 
 const Title = styled.h1`

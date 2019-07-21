@@ -20,44 +20,54 @@ const variants = {
   },
 };
 
-const disabled = ({ disabled }) =>
-  !!disabled ? 'opacity: 0.8;' : '';
+const disabled = ({ disabled }) => (disabled ? 'opacity: 0.8;' : '');
 
 const variantBackgroundColorHover = ({ variant }) => {
   const { backgroundHover } = variants[variant];
-  return backgroundHover ? css`background-color: ${variants[variant].backgroundHover};` : '';
-}
+  return backgroundHover
+    ? css`
+        background-color: ${variants[variant].backgroundHover};
+      `
+    : '';
+};
 
 const variantBackgroundColor = ({ variant }) => {
   const { backgroundColor } = variants[variant];
-  return backgroundColor ? css`background-color: ${variants[variant].backgroundColor};` : '';
-}
+  return backgroundColor
+    ? css`
+        background-color: ${variants[variant].backgroundColor};
+      `
+    : '';
+};
 
 const variantColor = ({ variant }) => {
   const { color } = variants[variant];
-  return color ? css`color: ${variants[variant].color};` : '';
-}
+  return color
+    ? css`
+        color: ${variants[variant].color};
+      `
+    : '';
+};
 
 const buttonStyles = ({ width = '100%', maxWidth, variant = 'default' }) => css`
   border: none;
   outline: none;
   font-size: 1rem;
-  padding: .5rem .2rem;
+  padding: 0.5rem 0.2rem;
   cursor: pointer;
-  ${width ? `width: ${width}` : ""};
-  ${maxWidth ? `max-width: ${maxWidth}` : ""};
+  ${width ? `width: ${width}` : ''};
+  ${maxWidth ? `max-width: ${maxWidth}` : ''};
   ${variantBackgroundColor({ variant })};
   ${variantColor({ variant })};
   &:hover {
-    ${variantBackgroundColorHover({ variant })}
+    ${variantBackgroundColorHover({ variant })};
   }
 `;
 
 const ButtonUI = styled.button`
   ${buttonStyles};
   ${padding};
-  ${margin}
-  ${disabled};
+  ${margin} ${disabled};
   @media (min-width: ${media.tablet}px) {
     ${({ tablet = { width: false, height: false } }) => `
       ${padding(tablet)}

@@ -7,7 +7,7 @@
   "scripts": {
     "build": "parcel build ./src/index.html -d ./dist",
     "start": "parcel ./src/index.html",
-    "lint": "eslint --ignore-pattern node_modules src",
+    "lint": "eslint --ignore-pattern node_modules ./src",
     "test": "jest",
     "test:coverage": "jest --coverage"
   },
@@ -21,13 +21,13 @@
     "styled-components": "3.3.3"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
     "@babel/preset-react": "^7.0.0",
     "@testing-library/react": "^8.0.5",
     "babel-eslint": "8.2.6",
     "babel-jest": "^24.8.0",
     "babel-loader": "7.1.5",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-polyfill": "6.26.0",
     "eslint": "5.1.0",
     "eslint-config-google": "0.9.1",
