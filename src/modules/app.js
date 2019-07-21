@@ -3,14 +3,22 @@ import AppShell from '../components/templates/app-shell';
 import PricesContext from '../contexts/price';
 import { getBTCPrice, getBTAPrice } from '../services/prices';
 
-export default function App({ children, match }) {
+export default function App({ children, location }) {
   const [btaPrice, setBtaPrice] = useState({ sell: 0, buy: 0 });
   const [btcPrice, setBtcPrice] = useState({ sell: 0, buy: 0 });
 
   const links = [
-    { active: match.path === '/', label: 'Dashboard', to: '/' },
-    { active: match.path === '/exchange', label: 'Compra e Venda', to: '/exchange' },
-    { active: match.path === '/transactions', label: 'Extrato', to: '/transactions' },
+    { active: location.pathname === '/', label: 'Dashboard', to: '/' },
+    {
+      active: location.pathname === '/exchange',
+      label: 'Compra e Venda',
+      to: '/exchange',
+    },
+    {
+      active: location.pathname === '/transactions',
+      label: 'Extrato',
+      to: '/transactions',
+    },
   ];
 
   useEffect(() => {
