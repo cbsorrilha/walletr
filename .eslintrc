@@ -1,13 +1,6 @@
 {
-  "extends": [
-    "eslint:recommended",
-    "google"
-  ],
-  "plugins": [
-    "react",
-    "prettier",
-    "import"
-  ],
+  "extends": ["eslint:recommended", "google"],
+  "plugins": ["react", "prettier", "import"],
   "parser": "babel-eslint",
   "parserOptions": {
     "sourceType": "module",
@@ -39,39 +32,23 @@
     "react/jsx-no-undef": "error",
     "no-else-return": "error",
     "no-lonely-if": "error",
-    "quote-props": [
-      "error",
-      "as-needed"
-    ],
+    "quote-props": ["error", "as-needed"],
     "react/jsx-uses-react": "error",
     "react/jsx-uses-vars": "error",
-    "jsx-quotes": [
-      "error",
-      "prefer-double"
-    ],
+    "jsx-quotes": ["error", "prefer-double"],
     "react/self-closing-comp": "error",
     "react/jsx-no-duplicate-props": "error",
     "comma-dangle": "off",
     "space-after-keywords": "off",
     "semi": "off",
     "object-curly-spacing": "off",
-    "arrow-parens": [
-      "error",
-      "as-needed"
-    ],
-    "import/first": [
-      "error"
-    ],
-    "import/newline-after-import": [
-      "error"
-    ],
+    "arrow-parens": ["error", "as-needed"],
+    "import/first": ["error"],
+    "import/newline-after-import": ["error"],
     "import/order": [
       "error",
       {
-        "groups": [
-          "builtin",
-          "external"
-        ]
+        "groups": ["builtin", "external"]
       }
     ],
     "prettier/prettier": [
@@ -98,7 +75,7 @@
       }
     ],
     "prefer-template": "error",
-    "react/no-array-index-key": "error",
+    "react/no-array-index-key": 0,
     "prefer-destructuring": [
       "error",
       {

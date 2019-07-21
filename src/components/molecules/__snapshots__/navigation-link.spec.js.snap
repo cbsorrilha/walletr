@@ -1,58 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Test the navigation component should match the snapshots 1`] = `
+exports[`Test the navigation-link component should match the snapshots 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="sc-gzVnrw gnnuIE sc-bdVaJa cTyYxe"
+        class="sc-bxivhb kArgLR sc-bdVaJa dvwweK"
       >
-        <div
-          class="sc-bdVaJa eaciBL"
-          direction="row"
-          width="90%"
-        >
-          <h1
-            class="sc-bwzfXH fwGeXu"
-          >
-            Wallet
-            <span
-              class="sc-htpNat kUfHpA"
-            >
-              r
-            </span>
-          </h1>
-          <div
-            class="sc-bdVaJa iFGYfk"
-          />
-        </div>
+        <a
+          class="sc-bwzfXH etoeVR"
+        />
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="sc-gzVnrw gnnuIE sc-bdVaJa cTyYxe"
+      class="sc-bxivhb kArgLR sc-bdVaJa dvwweK"
     >
-      <div
-        class="sc-bdVaJa eaciBL"
-        direction="row"
-        width="90%"
-      >
-        <h1
-          class="sc-bwzfXH fwGeXu"
-        >
-          Wallet
-          <span
-            class="sc-htpNat kUfHpA"
-          >
-            r
-          </span>
-        </h1>
-        <div
-          class="sc-bdVaJa iFGYfk"
-        />
-      </div>
+      <a
+        class="sc-bwzfXH etoeVR"
+      />
     </div>
   </div>,
   "debug": [Function],

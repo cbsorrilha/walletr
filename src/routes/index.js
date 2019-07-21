@@ -1,12 +1,14 @@
 import React, { Suspense, lazy } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, withRouter } from 'react-router-dom';
 import Boundary from './error-page';
-import AppShell from '../components/templates/app-shell';
 import LoadingPage from '../components/templates/loading-page';
+import App from '../modules/app';
+
+const RouterApp = withRouter(App);
 
 const Routes = () => (
   <Router>
-    <AppShell>
+    <RouterApp>
       <Boundary>
         <Suspense fallback={<LoadingPage />}>
           <Route exact path="/" component={lazy(() => import('../modules/dashboard'))} />
@@ -14,7 +16,7 @@ const Routes = () => (
           <Route path="/transactions" component={lazy(() => import('../modules/transactions'))} />
         </Suspense>
       </Boundary>
-    </AppShell>
+    </RouterApp>
   </Router>
 );
 

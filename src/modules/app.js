@@ -8,27 +8,23 @@ export default function App({ children, match }) {
   const [btcPrice, setBtcPrice] = useState({ sell: 0, buy: 0 });
 
   const links = [
-    { active: match.path === "/", label: "Dashboard", to: "/" },
-    { active: match.path === "/exchange", label: "Compra e Venda", to: "/exchange" },
-    { active: match.path === "/transactions", label: "Extrato", to: "/transactions" }
+    { active: match.path === '/', label: 'Dashboard', to: '/' },
+    { active: match.path === '/exchange', label: 'Compra e Venda', to: '/exchange' },
+    { active: match.path === '/transactions', label: 'Extrato', to: '/transactions' },
   ];
 
   useEffect(() => {
-
     getBTCPrice().then(prices => {
       setBtaPrice(prices);
-    })
+    });
     getBTAPrice().then(prices => {
       setBtcPrice(prices);
-    })
-
+    });
   }, []);
 
   return (
     <PricesContext.Provider value={{ btc: btcPrice, bta: btaPrice }}>
-      <AppShell navigation={{ links }}>
-        {children}
-      </AppShell>
+      <AppShell navigation={{ links }}>{children}</AppShell>
     </PricesContext.Provider>
-  )
+  );
 }

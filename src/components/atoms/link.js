@@ -5,28 +5,46 @@ import { Link } from 'react-router-dom';
 const color = ({ variant }) => {
   switch (variant) {
     case 'dark':
-      return `
+      return css`
         color: #333333;
         &:hover {
           color: #666666;
         }
+        ${({ active = false }) =>
+          active
+            ? css`
+                color: #666666;
+              `
+            : ''};
       `;
 
     case 'light':
-      return `
+      return css`
         color: #eeeeee;
         &:hover {
           color: #cccccc;
         }
+        ${({ active = false }) =>
+          active
+            ? css`
+                color: #cccccc;
+              `
+            : ''};
       `;
 
     default:
-      return `
-      color: #6A93db;
-      &:hover {
-        color: #2f65c4;
-      }
-    `;
+      return css`
+        color: #0db14b;
+        &:hover {
+          color: #1cee6c;
+        }
+        ${({ active = false }) =>
+          active
+            ? css`
+                color: #1cee6c;
+              `
+            : ''};
+      `;
   }
 };
 
