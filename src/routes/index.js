@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, withRouter } from 'react-router-dom';
 import Boundary from './error-page';
 import LoadingPage from '../components/templates/loading-page';
 import App from '../modules/app';
+
 const RouterApp = withRouter(App);
 
 const Routes = () => (

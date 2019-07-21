@@ -9,7 +9,7 @@ const Navigation = ({ links = [] }) => (
   <NavigationWrapper alignItems="center" justify="space-between">
     <Wrapper justify="center" direction="row" alignItems="center">
       <Logo />
-      <FlexContainer margin={{ left: "1.5rem" }} alignItems="center">
+      <FlexContainer margin={{ left: '1.5rem' }} alignItems="center">
         {links.map(({ ...props }, i) => <NavigationLink key={i} {...props} />)}
       </FlexContainer>
     </Wrapper>

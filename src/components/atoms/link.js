@@ -10,7 +10,12 @@ const color = ({ variant }) => {
         &:hover {
           color: #666666;
         }
-        ${({ active = false }) => active ? css`color: #666666;` : ""};
+        ${({ active = false }) =>
+          active
+            ? css`
+                color: #666666;
+              `
+            : ''};
       `;
 
     case 'light':
@@ -19,17 +24,27 @@ const color = ({ variant }) => {
         &:hover {
           color: #cccccc;
         }
-        ${({ active = false }) => active ? css`color: #cccccc;` : ""};
+        ${({ active = false }) =>
+          active
+            ? css`
+                color: #cccccc;
+              `
+            : ''};
       `;
 
     default:
       return css`
-      color: #0db14b;
-      &:hover {
-        color: #1cee6c;
-      }
-      ${({ active = false }) => active ? css`color: #1cee6c;` : ""};
-    `;
+        color: #0db14b;
+        &:hover {
+          color: #1cee6c;
+        }
+        ${({ active = false }) =>
+          active
+            ? css`
+                color: #1cee6c;
+              `
+            : ''};
+      `;
   }
 };
 
