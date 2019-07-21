@@ -1,6 +1,6 @@
-import React from "react";
-import styled, { css } from "styled-components";
-import Link from "../atoms/link";
+import React from 'react';
+import styled, { css } from 'styled-components';
+import Link from '../atoms/link';
 
 export default function NavigationLink({ active, label, ...props }) {
   return (
@@ -19,6 +19,6 @@ const NavigationLinkUI = styled(Link)`
       ? css`
           background-color: #e6e6e6;
         `
-      : ""};
+      : ''};
   padding: 0 1.5rem;
 `;
