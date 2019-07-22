@@ -2,10 +2,19 @@ import React, { useEffect, useState } from 'react';
 import AppShell from '../components/templates/app-shell';
 import PricesContext from '../contexts/price';
 import { getBTCPrice, getBTAPrice } from '../services/prices';
+import PriceWidget from './prices';
+
+const useCoin = name => {
+  const [coin, setter] = useState({ sell: 0, buy: 0, name });
+  const coinSetter = payload => {
+    setter({ ...payload, name });
+  };
+  return [coin, coinSetter];
+};
 
 export default function App({ children, location }) {
-  const [btaPrice, setBtaPrice] = useState({ sell: 0, buy: 0 });
-  const [btcPrice, setBtcPrice] = useState({ sell: 0, buy: 0 });
+  const [btaPrice, setBtaPrice] = useCoin('br');
+  const [btcPrice, setBtcPrice] = useCoin('₿');
 
   const links = [
     { active: location.pathname === '/', label: 'Dashboard', to: '/' },
@@ -23,16 +32,16 @@ export default function App({ children, location }) {
 
   useEffect(() => {
     getBTCPrice().then(prices => {
-      setBtaPrice(prices);
+      setBtcPrice(prices);
     });
     getBTAPrice().then(prices => {
-      setBtcPrice(prices);
+      setBtaPrice(prices);
     });
   }, []);
 
   return (
     <PricesContext.Provider value={{ btc: btcPrice, bta: btaPrice }}>
-      <AppShell navigation={{ links }}>{children}</AppShell>
+      <AppShell navigation={{ links, widget: () => <PriceWidget /> }}>{children}</AppShell>
     </PricesContext.Provider>
   );
 }
