@@ -21,6 +21,7 @@ const BTAAPIUrl = `https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata
 export async function getBTCPrice() {
   const { data } = await request(BTCAPIUrl);
   const { buy, sell } = data.ticker;
+
   return { buy, sell, date: getPriceDate(new Date()) };
 }
 

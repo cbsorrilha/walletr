@@ -5,23 +5,15 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
-        class="sc-bxivhb kArgLR sc-bdVaJa dvwweK"
-      >
-        <a
-          class="sc-bwzfXH jkSlsb"
-        />
-      </div>
+      <a
+        class="sc-htpNat eGrszd sc-bdVaJa gTzCbY"
+      />
     </div>
   </body>,
   "container": <div>
-    <div
-      class="sc-bxivhb kArgLR sc-bdVaJa dvwweK"
-    >
-      <a
-        class="sc-bwzfXH jkSlsb"
-      />
-    </div>
+    <a
+      class="sc-htpNat eGrszd sc-bdVaJa gTzCbY"
+    />
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

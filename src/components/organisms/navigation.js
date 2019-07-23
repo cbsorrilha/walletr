@@ -5,16 +5,23 @@ import Logo from '../atoms/logo';
 import Wrapper from '../molecules/wrapper';
 import NavigationLink from '../molecules/navigation-link';
 
-const Navigation = ({ links = [] }) => (
-  <NavigationWrapper alignItems="center" justify="space-between">
-    <Wrapper justify="center" direction="row" alignItems="center">
-      <Logo />
-      <FlexContainer margin={{ left: '1.5rem' }} alignItems="center">
-        {links.map(({ ...props }, i) => <NavigationLink key={i} {...props} />)}
-      </FlexContainer>
-    </Wrapper>
-  </NavigationWrapper>
-);
+const Navigation = ({ links = [], widget = null }) => {
+  return (
+    <NavigationWrapper alignItems="center" justify="space-between">
+      <Wrapper justify="center" direction="row" alignItems="center">
+        <Logo />
+        <FlexContainer margin={{ left: '1.5rem' }} alignItems="center">
+          {links.map(({ ...props }, i) => <NavigationLink key={i} {...props} />)}
+        </FlexContainer>
+        {widget && (
+          <FlexContainer margin={{ left: '1.5rem' }} justify="flex-end" alignItems="center">
+            {widget()}
+          </FlexContainer>
+        )}
+      </Wrapper>
+    </NavigationWrapper>
+  );
+};
 
 const NavigationWrapper = styled(FlexContainer)`
   height: 3.5rem;
