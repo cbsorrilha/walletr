@@ -1,3 +1,3 @@
-export function formatMoneyString(amount) {
-  return `R$ ${parseFloat(amount).toFixed(2)}`;
+export function formatMoneyString(amount, coin = 'R$') {
+  return `${coin} ${parseFloat(amount).toFixed(2)}`;
 }

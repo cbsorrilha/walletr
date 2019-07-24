@@ -1,80 +1,52 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Test the error-page component should match the snapshots 1`] = `
+exports[`Test the dashboard component should match the snapshots 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
-        class="sc-bdVaJa fvkXj"
-        direction="column"
-        height="100vh"
+      <h1
+        class="sc-bwzfXH gZdTmj"
+        color="#086a2d"
       >
-        <div
-          class="sc-bwzfXH fXZdIj"
+        Olá, Pedro!
+      </h1>
+      <div
+        class="sc-bdVaJa lahKvo"
+      >
+        <h3
+          class="sc-bxivhb bUFlYQ"
         >
-          <div
-            class="sc-bdVaJa eLojcs"
-          >
-            <div
-              class="sc-bwzfXH fXZdIj"
-            >
-              <h1
-                class="sc-dnqmqq itDPRL sc-htpNat jXFOWT"
-              >
-                Ops!
-              </h1>
-              <div
-                class="sc-bdVaJa bKhobn"
-                direction="column"
-              >
-                <p
-                  class="sc-htoDjs kbxgHx"
-                />
-                <p
-                  class="sc-htoDjs kbxgHx"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
+          Suas carteiras
+        </h3>
+        <p
+          class="sc-gzVnrw gqATac"
+        >
+          Carregando... :)
+        </p>
       </div>
     </div>
   </body>,
   "container": <div>
-    <div
-      class="sc-bdVaJa fvkXj"
-      direction="column"
-      height="100vh"
+    <h1
+      class="sc-bwzfXH gZdTmj"
+      color="#086a2d"
     >
-      <div
-        class="sc-bwzfXH fXZdIj"
+      Olá, Pedro!
+    </h1>
+    <div
+      class="sc-bdVaJa lahKvo"
+    >
+      <h3
+        class="sc-bxivhb bUFlYQ"
       >
-        <div
-          class="sc-bdVaJa eLojcs"
-        >
-          <div
-            class="sc-bwzfXH fXZdIj"
-          >
-            <h1
-              class="sc-dnqmqq itDPRL sc-htpNat jXFOWT"
-            >
-              Ops!
-            </h1>
-            <div
-              class="sc-bdVaJa bKhobn"
-              direction="column"
-            >
-              <p
-                class="sc-htoDjs kbxgHx"
-              />
-              <p
-                class="sc-htoDjs kbxgHx"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
+        Suas carteiras
+      </h3>
+      <p
+        class="sc-gzVnrw gqATac"
+      >
+        Carregando... :)
+      </p>
     </div>
   </div>,
   "debug": [Function],

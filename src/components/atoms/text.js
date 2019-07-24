@@ -1,13 +1,6 @@
 import styled, { css } from 'styled-components';
 import PropTypes from 'prop-types';
-import { media } from '../helpers';
-
-const textStyles = ({ align = 'left', color = '#333', weight = 'normal', bold }) => css`
-  ${!align ? '' : `text-align: ${align}`};
-  ${!color ? '' : `color: ${color}`};
-  ${!weight ? '' : `font-weight: ${weight}`};
-  ${!bold ? '' : `font-weight: 700`};
-`;
+import { media, textStyles } from '../helpers';
 
 const getFontSize = ({ size = 'md' }) => {
   switch (size) {
