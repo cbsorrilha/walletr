@@ -1,79 +1,59 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Test the error-page component should match the snapshots 1`] = `
+exports[`Test the real-balance-card component should match the snapshots 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="sc-bdVaJa fvkXj"
-        direction="column"
-        height="100vh"
+        class="sc-bwzfXH ktgSLy"
       >
         <div
-          class="sc-bwzfXH fXZdIj"
+          class="sc-htpNat kqCrsI"
         >
-          <div
-            class="sc-bdVaJa eLojcs"
+          <p
+            class="sc-bdVaJa kVcfOV"
+            color="#1cee6c"
           >
-            <div
-              class="sc-bwzfXH fXZdIj"
-            >
-              <h1
-                class="sc-dnqmqq itDPRL sc-htpNat jXFOWT"
-              >
-                Ops!
-              </h1>
-              <div
-                class="sc-bdVaJa bKhobn"
-                direction="column"
-              >
-                <p
-                  class="sc-htoDjs kbxgHx"
-                />
-                <p
-                  class="sc-htoDjs kbxgHx"
-                />
-              </div>
-            </div>
-          </div>
+            R$
+          </p>
+        </div>
+        <div
+          class="sc-htpNat kqCrsI"
+        >
+          <p
+            class="sc-bdVaJa AEPFh"
+            color="#1cee6c"
+          >
+             NaN
+          </p>
         </div>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="sc-bdVaJa fvkXj"
-      direction="column"
-      height="100vh"
+      class="sc-bwzfXH ktgSLy"
     >
       <div
-        class="sc-bwzfXH fXZdIj"
+        class="sc-htpNat kqCrsI"
       >
-        <div
-          class="sc-bdVaJa eLojcs"
+        <p
+          class="sc-bdVaJa kVcfOV"
+          color="#1cee6c"
         >
-          <div
-            class="sc-bwzfXH fXZdIj"
-          >
-            <h1
-              class="sc-dnqmqq itDPRL sc-htpNat jXFOWT"
-            >
-              Ops!
-            </h1>
-            <div
-              class="sc-bdVaJa bKhobn"
-              direction="column"
-            >
-              <p
-                class="sc-htoDjs kbxgHx"
-              />
-              <p
-                class="sc-htoDjs kbxgHx"
-              />
-            </div>
-          </div>
-        </div>
+          R$
+        </p>
+      </div>
+      <div
+        class="sc-htpNat kqCrsI"
+      >
+        <p
+          class="sc-bdVaJa AEPFh"
+          color="#1cee6c"
+        >
+           NaN
+        </p>
       </div>
     </div>
   </div>,

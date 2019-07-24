@@ -1,47 +1,28 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import AppShell from '../components/templates/app-shell';
-import PricesContext from '../contexts/price';
-import { getBTCPrice, getBTAPrice } from '../services/prices';
+import ApplicationContexts from '../contexts/';
 import PriceWidget from './prices';
+import usePrices from '../hooks/usePrices';
+import useBalances from '../hooks/useBalances';
 
-const useCoin = name => {
-  const [coin, setter] = useState({ sell: 0, buy: 0, name });
-  const coinSetter = payload => {
-    setter({ ...payload, name });
-  };
-  return [coin, coinSetter];
-};
+const getLinks = location => [
+  { active: location.pathname === '/', label: 'Dashboard', to: '/' },
+  {
+    active: location.pathname === '/exchange',
+    label: 'Compra e Venda',
+    to: '/exchange',
+  },
+  {
+    active: location.pathname === '/transactions',
+    label: 'Extrato',
+    to: '/transactions',
+  },
+];
 
 export default function App({ children, location }) {
-  const [btaPrice, setBtaPrice] = useCoin('br');
-  const [btcPrice, setBtcPrice] = useCoin('₿');
-
-  const links = [
-    { active: location.pathname === '/', label: 'Dashboard', to: '/' },
-    {
-      active: location.pathname === '/exchange',
-      label: 'Compra e Venda',
-      to: '/exchange',
-    },
-    {
-      active: location.pathname === '/transactions',
-      label: 'Extrato',
-      to: '/transactions',
-    },
-  ];
-
-  useEffect(() => {
-    getBTCPrice().then(prices => {
-      setBtcPrice(prices);
-    });
-    getBTAPrice().then(prices => {
-      setBtaPrice(prices);
-    });
-  }, []);
-
   return (
-    <PricesContext.Provider value={{ btc: btcPrice, bta: btaPrice }}>
-      <AppShell navigation={{ links, widget: () => <PriceWidget /> }}>{children}</AppShell>
-    </PricesContext.Provider>
+    <ApplicationContexts balances={useBalances()} prices={usePrices()}>
+      <AppShell navigation={{ links: getLinks(location), widget: () => <PriceWidget /> }}>{children}</AppShell>
+    </ApplicationContexts>
   );
 }

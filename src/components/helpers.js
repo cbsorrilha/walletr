@@ -60,3 +60,10 @@ export const border = ({ border }) => {
     ${border.radius ? `border-radius: ${border.radius}` : ``};
   `;
 };
+
+export const textStyles = ({ align = 'left', color = '#333', weight = 'normal', bold }) => css`
+  ${!align ? '' : `text-align: ${align}`};
+  ${!color ? '' : `color: ${color}`};
+  ${!weight ? '' : `font-weight: ${weight}`};
+  ${!bold ? '' : `font-weight: 700`};
+`;

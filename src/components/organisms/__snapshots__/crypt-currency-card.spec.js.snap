@@ -1,41 +1,64 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Test the error-page component should match the snapshots 1`] = `
+exports[`Test the crypt-currency-card component should match the snapshots 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="sc-bdVaJa fvkXj"
+        class="sc-bwzfXH ioAeWq"
         direction="column"
-        height="100vh"
       >
         <div
-          class="sc-bwzfXH fXZdIj"
+          class="sc-bwzfXH dqCzwa"
+          height="auto"
         >
           <div
-            class="sc-bdVaJa eLojcs"
+            class="sc-htpNat idAcKH"
+            width="auto"
           >
-            <div
-              class="sc-bwzfXH fXZdIj"
+            <p
+              class="sc-bdVaJa iafxnE"
+              color="#1cee6c"
             >
-              <h1
-                class="sc-dnqmqq itDPRL sc-htpNat jXFOWT"
-              >
-                Ops!
-              </h1>
-              <div
-                class="sc-bdVaJa bKhobn"
-                direction="column"
-              >
-                <p
-                  class="sc-htoDjs kbxgHx"
-                />
-                <p
-                  class="sc-htoDjs kbxgHx"
-                />
-              </div>
-            </div>
+              a
+            </p>
+          </div>
+          <div
+            class="sc-htpNat kqCrsI"
+          >
+            <p
+              class="sc-bdVaJa iafxnE"
+              color="#1cee6c"
+            >
+              0
+            </p>
+          </div>
+        </div>
+        <div
+          class="sc-bwzfXH hwDfLT"
+          height="auto"
+        >
+          <div
+            class="sc-htpNat idAcKH"
+            width="auto"
+          >
+            <p
+              class="sc-bdVaJa kVcfOV"
+              color="#1cee6c"
+            >
+              R$
+            </p>
+          </div>
+          <div
+            class="sc-htpNat kqCrsI"
+          >
+            <p
+              class="sc-bdVaJa AEPFh"
+              color="#1cee6c"
+            >
+               NaN
+            </p>
           </div>
         </div>
       </div>
@@ -43,36 +66,59 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-bdVaJa fvkXj"
+      class="sc-bwzfXH ioAeWq"
       direction="column"
-      height="100vh"
     >
       <div
-        class="sc-bwzfXH fXZdIj"
+        class="sc-bwzfXH dqCzwa"
+        height="auto"
       >
         <div
-          class="sc-bdVaJa eLojcs"
+          class="sc-htpNat idAcKH"
+          width="auto"
         >
-          <div
-            class="sc-bwzfXH fXZdIj"
+          <p
+            class="sc-bdVaJa iafxnE"
+            color="#1cee6c"
           >
-            <h1
-              class="sc-dnqmqq itDPRL sc-htpNat jXFOWT"
-            >
-              Ops!
-            </h1>
-            <div
-              class="sc-bdVaJa bKhobn"
-              direction="column"
-            >
-              <p
-                class="sc-htoDjs kbxgHx"
-              />
-              <p
-                class="sc-htoDjs kbxgHx"
-              />
-            </div>
-          </div>
+            a
+          </p>
+        </div>
+        <div
+          class="sc-htpNat kqCrsI"
+        >
+          <p
+            class="sc-bdVaJa iafxnE"
+            color="#1cee6c"
+          >
+            0
+          </p>
+        </div>
+      </div>
+      <div
+        class="sc-bwzfXH hwDfLT"
+        height="auto"
+      >
+        <div
+          class="sc-htpNat idAcKH"
+          width="auto"
+        >
+          <p
+            class="sc-bdVaJa kVcfOV"
+            color="#1cee6c"
+          >
+            R$
+          </p>
+        </div>
+        <div
+          class="sc-htpNat kqCrsI"
+        >
+          <p
+            class="sc-bdVaJa AEPFh"
+            color="#1cee6c"
+          >
+             NaN
+          </p>
         </div>
       </div>
     </div>

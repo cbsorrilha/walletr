@@ -1,8 +1,21 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import { media, textStyles } from '../helpers';
 
-const defaultRules = ({ align = 'left' }) => `
-  text-align: ${align}
+const initialTextProps = { align: false, color: false, weight: false, bold: false };
+
+const defaultRules = () => css`
+  ${textStyles};
+  @media (min-width: ${media.tablet}px) {
+    ${({ tablet = initialTextProps }) => css`
+      ${textStyles(tablet)};
+    `};
+  }
+  @media (min-width: ${media.desktop}px) {
+    ${({ desktop = initialTextProps }) => css`
+      ${textStyles(desktop)};
+    `};
+  }
 `;
 
 const H1 = styled.h1`
