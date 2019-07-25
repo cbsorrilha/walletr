@@ -27,6 +27,7 @@ export async function getBTCPrice() {
 
 export async function getBTAPrice() {
   const { data } = await request(BTAAPIUrl);
+
   const [{ cotacaoCompra, cotacaoVenda }] = data.value;
   return {
     buy: cotacaoCompra,

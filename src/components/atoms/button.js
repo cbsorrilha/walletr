@@ -4,8 +4,8 @@ import { media, margin, padding } from '../helpers';
 
 const variants = {
   primary: {
-    backgroundColor: '#2164d9',
-    backgroundHover: '#184ba2',
+    backgroundColor: '#0db14b',
+    backgroundHover: '#0dcc5b',
     color: '#FFF',
   },
   danger: {

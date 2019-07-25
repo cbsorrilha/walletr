@@ -2,8 +2,7 @@ import React from 'react';
 import AppShell from '../components/templates/app-shell';
 import ApplicationContexts from '../contexts/';
 import PriceWidget from './prices';
-import usePrices from '../hooks/usePrices';
-import useBalances from '../hooks/useBalances';
+import useExchanger from '../hooks/useExchanger';
 
 const getLinks = location => [
   { active: location.pathname === '/', label: 'Dashboard', to: '/' },
@@ -20,9 +19,23 @@ const getLinks = location => [
 ];
 
 export default function App({ children, location }) {
+  const [balances, prices, simulateTransaction, makeTransaction] = useExchanger();
+
   return (
-    <ApplicationContexts balances={useBalances()} prices={usePrices()}>
-      <AppShell navigation={{ links: getLinks(location), widget: () => <PriceWidget /> }}>{children}</AppShell>
+    <ApplicationContexts
+      simulateTransaction={simulateTransaction}
+      makeTransaction={makeTransaction}
+      balances={balances}
+      prices={prices}
+    >
+      <AppShell
+        navigation={{
+          links: getLinks(location),
+          widget: () => <PriceWidget />,
+        }}
+      >
+        {children}
+      </AppShell>
     </ApplicationContexts>
   );
 }
