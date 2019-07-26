@@ -6,6 +6,7 @@
   "license": "MIT",
   "scripts": {
     "build": "parcel build ./src/index.html -d ./dist",
+    "now-build": "parcel build ./src/index.html -d ./dist",
     "start": "parcel ./src/index.html",
     "lint": "eslint --ignore-pattern node_modules ./src",
     "test": "jest",
