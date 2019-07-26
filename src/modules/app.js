@@ -19,7 +19,7 @@ const getLinks = location => [
 ];
 
 export default function App({ children, location }) {
-  const [balances, prices, simulateTransaction, makeTransaction] = useExchanger();
+  const [balances, prices, simulateTransaction, makeTransaction, transactions] = useExchanger();
 
   return (
     <ApplicationContexts
@@ -27,6 +27,7 @@ export default function App({ children, location }) {
       makeTransaction={makeTransaction}
       balances={balances}
       prices={prices}
+      transactions={transactions}
     >
       <AppShell
         navigation={{

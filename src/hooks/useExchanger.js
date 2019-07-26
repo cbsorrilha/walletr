@@ -1,10 +1,12 @@
 import useBalances from './useBalances';
 import usePrices from '../hooks/usePrices';
+import useTransactions from '../hooks/useTransactions';
 import { convertCurrency } from '../helpers/currency';
 
 export default function useExchanger() {
   const [balances, exchange] = useBalances();
   const { btc, bta } = usePrices();
+  const [transactions, saveTransaction] = useTransactions();
   const currencyDict = {
     BTA: {
       price: parseFloat(bta.sell),
@@ -27,11 +29,17 @@ export default function useExchanger() {
       value,
       convertCurrency(currencyDict[fromCurrency].price, currencyDict[toCurrency].price, value)
     );
+    await saveTransaction(
+      fromCurrency,
+      toCurrency,
+      value,
+      convertCurrency(currencyDict[fromCurrency].price, currencyDict[toCurrency].price, value)
+    );
   };
 
   const simulateTransaction = (fromCurrency, toCurrency, value) => {
     return convertCurrency(currencyDict[fromCurrency].price, currencyDict[toCurrency].price, value);
   };
 
-  return [balances, { btc, bta }, simulateTransaction, makeTransaction];
+  return [balances, { btc, bta }, simulateTransaction, makeTransaction, transactions];
 }
