@@ -1,0 +1,14 @@
+{
+  "name": "walletr",
+  "version": "2",
+  "github": {
+    "enabled": false
+  },
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/static-build"
+    }
+  ],
+  "routes": [{ "src": "^/(.*)", "dest": "index.html" }]
+}
