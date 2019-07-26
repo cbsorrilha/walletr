@@ -4,10 +4,8 @@
   "builds": [
     {
       "src": "package.json",
-      "use": "@now/static-build"
+      "use": "@now/static-build",
+      "rewrites": [{ "source": "*", "destination": "/index.html" }]
     }
-  ],
-  "static": {
-    "rewrites": [{ "source": "*", "destination": "/index.html" }]
-  }
+  ]
 }
