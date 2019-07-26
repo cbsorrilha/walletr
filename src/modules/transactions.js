@@ -1,5 +1,8 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import TransactionContext from '../contexts/transactions';
+import TransactionsTemplate from '../components/templates/transactions';
 
 export default function Transactions() {
-  return <div>Here goes the transactions</div>;
+  const { transactions } = useContext(TransactionContext);
+  return <TransactionsTemplate transactions={transactions} />;
 }

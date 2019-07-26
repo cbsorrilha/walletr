@@ -1,5 +1,11 @@
-// here goes the transaction server
+import PouchDB from 'pouchdb';
 
-// const db = new PouchDB("transactions");
+const db = new PouchDB('transactions');
 
-// export const createTransaction = (fromCoin, toCoin, value) => {};
+export const createTransaction = async ({ fromCurrency, toCurrency, value, convertedValue, time }) => {
+  db.post({ fromCurrency, toCurrency, value, convertedValue, time });
+};
+
+export const getTransactions = async () => {
+  return await db.allDocs({ include_docs: true });
+};
