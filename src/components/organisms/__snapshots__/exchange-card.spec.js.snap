@@ -1,19 +1,77 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Test the input component should match the snapshots 1`] = `
+exports[`Test the exchange-card component should match the snapshots 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <input
-        class="sc-bdVaJa jknHUf"
-      />
+      <div
+        class="sc-htoDjs llzCYI"
+      >
+        <h2
+          class="sc-bwzfXH cQCYSc"
+        >
+          Negociar Bitcoins
+        </h2>
+        <div
+          class="sc-dnqmqq ketiUs"
+          direction="column"
+          height="auto"
+        >
+          <div
+            class="sc-iwsKbI ddGHSU"
+          >
+            <div
+              class="sc-dnqmqq bGCyyp"
+            >
+              <div
+                class="sc-iwsKbI ddGHSU"
+              >
+                <h3
+                  class="sc-htpNat HtTYP"
+                >
+                  Carregando.... :)
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>,
   "container": <div>
-    <input
-      class="sc-bdVaJa jknHUf"
-    />
+    <div
+      class="sc-htoDjs llzCYI"
+    >
+      <h2
+        class="sc-bwzfXH cQCYSc"
+      >
+        Negociar Bitcoins
+      </h2>
+      <div
+        class="sc-dnqmqq ketiUs"
+        direction="column"
+        height="auto"
+      >
+        <div
+          class="sc-iwsKbI ddGHSU"
+        >
+          <div
+            class="sc-dnqmqq bGCyyp"
+          >
+            <div
+              class="sc-iwsKbI ddGHSU"
+            >
+              <h3
+                class="sc-htpNat HtTYP"
+              >
+                Carregando.... :)
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

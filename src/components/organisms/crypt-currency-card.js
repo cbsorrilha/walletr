@@ -4,7 +4,9 @@ import FlexContainer from '../atoms/flex-container';
 import FlexItem from '../atoms/flex-item';
 import { formatMoneyString } from '../../helpers/string';
 
-export default function CryptCurrencyCard({ value, coin, converter }) {
+export default function CryptCurrencyCard({ formater, value, coin, converter }) {
+  converter;
+
   return (
     <FlexContainer direction="column">
       <FlexContainer height="auto" justify="flex-end" alignItems="baseline">
@@ -15,7 +17,7 @@ export default function CryptCurrencyCard({ value, coin, converter }) {
         </FlexItem>
         <FlexItem>
           <Text size="1rem" color="#1cee6c">
-            {value}
+            {formater(value)}
           </Text>
         </FlexItem>
       </FlexContainer>

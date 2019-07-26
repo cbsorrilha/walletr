@@ -1,121 +1,127 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Test the crypt-currency-card component should match the snapshots 1`] = `
+exports[`Test the converter-input component should match the snapshots 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="sc-bwzfXH ioAeWq"
-        direction="column"
+        class="sc-ifAKCX iRPjiu"
+        height="auto"
       >
         <div
-          class="sc-bwzfXH dqCzwa"
-          height="auto"
+          class="sc-EHOje dFTmIt"
+        >
+          <p
+            class="sc-bdVaJa ejRlfi"
+          />
+        </div>
+        <div
+          class="sc-EHOje dBPDwy"
         >
           <div
-            class="sc-htpNat idAcKH"
-            width="auto"
+            class="sc-htpNat fIXIku"
+            direction="column"
           >
-            <p
-              class="sc-bdVaJa iafxnE"
-              color="#1cee6c"
+            <div
+              class="sc-bxivhb fsigtZ"
             >
-              a
-            </p>
-          </div>
-          <div
-            class="sc-htpNat kqCrsI"
-          >
-            <p
-              class="sc-bdVaJa iafxnE"
-              color="#1cee6c"
+              <input
+                class="sc-bwzfXH gdnGhC"
+                name="amount-undefined"
+                type="number"
+                value=""
+                width="13.5rem"
+              />
+            </div>
+            <div
+              class="sc-bxivhb gYEqsM"
+              height=".5rem"
             />
           </div>
         </div>
         <div
-          class="sc-bwzfXH hwDfLT"
-          height="auto"
+          class="sc-EHOje dBPDwy"
         >
           <div
-            class="sc-htpNat idAcKH"
-            width="auto"
+            class="sc-bxivhb jszyqE"
           >
             <p
-              class="sc-bdVaJa kVcfOV"
-              color="#1cee6c"
+              class="sc-bdVaJa jktShC"
             >
-              R$
+              ➡
             </p>
           </div>
-          <div
-            class="sc-htpNat kqCrsI"
+        </div>
+        <div
+          class="sc-EHOje PZOKT"
+        >
+          <p
+            class="sc-bdVaJa ejRlfi"
           >
-            <p
-              class="sc-bdVaJa AEPFh"
-              color="#1cee6c"
-            >
-               NaN
-            </p>
-          </div>
+             
+          </p>
         </div>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="sc-bwzfXH ioAeWq"
-      direction="column"
+      class="sc-ifAKCX iRPjiu"
+      height="auto"
     >
       <div
-        class="sc-bwzfXH dqCzwa"
-        height="auto"
+        class="sc-EHOje dFTmIt"
+      >
+        <p
+          class="sc-bdVaJa ejRlfi"
+        />
+      </div>
+      <div
+        class="sc-EHOje dBPDwy"
       >
         <div
-          class="sc-htpNat idAcKH"
-          width="auto"
+          class="sc-htpNat fIXIku"
+          direction="column"
         >
-          <p
-            class="sc-bdVaJa iafxnE"
-            color="#1cee6c"
+          <div
+            class="sc-bxivhb fsigtZ"
           >
-            a
-          </p>
-        </div>
-        <div
-          class="sc-htpNat kqCrsI"
-        >
-          <p
-            class="sc-bdVaJa iafxnE"
-            color="#1cee6c"
+            <input
+              class="sc-bwzfXH gdnGhC"
+              name="amount-undefined"
+              type="number"
+              value=""
+              width="13.5rem"
+            />
+          </div>
+          <div
+            class="sc-bxivhb gYEqsM"
+            height=".5rem"
           />
         </div>
       </div>
       <div
-        class="sc-bwzfXH hwDfLT"
-        height="auto"
+        class="sc-EHOje dBPDwy"
       >
         <div
-          class="sc-htpNat idAcKH"
-          width="auto"
+          class="sc-bxivhb jszyqE"
         >
           <p
-            class="sc-bdVaJa kVcfOV"
-            color="#1cee6c"
+            class="sc-bdVaJa jktShC"
           >
-            R$
+            ➡
           </p>
         </div>
-        <div
-          class="sc-htpNat kqCrsI"
+      </div>
+      <div
+        class="sc-EHOje PZOKT"
+      >
+        <p
+          class="sc-bdVaJa ejRlfi"
         >
-          <p
-            class="sc-bdVaJa AEPFh"
-            color="#1cee6c"
-          >
-             NaN
-          </p>
-        </div>
+           
+        </p>
       </div>
     </div>
   </div>,

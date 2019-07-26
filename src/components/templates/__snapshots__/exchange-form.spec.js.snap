@@ -1,0 +1,264 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test the exchange-form component should match the snapshots 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="sc-ifAKCX jnZHkZ"
+      >
+        <div
+          class="sc-EHOje fxFbyW"
+          width="100%"
+        >
+          <form>
+            <div
+              class="sc-EHOje cAUkgB"
+            >
+              <div
+                class="sc-ifAKCX fndciJ"
+              >
+                <div
+                  class="sc-EHOje cAUkgB"
+                >
+                  <p
+                    class="sc-bdVaJa cPeglz"
+                  >
+                    Saldo: 
+                    undefined undefined
+                  </p>
+                </div>
+                <div
+                  class="sc-EHOje duAuhe"
+                >
+                  <a
+                    class="sc-bwzfXH jkSlsb"
+                  >
+                    Tudo
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="sc-gzVnrw eZFjIs"
+              height="auto"
+            >
+              <div
+                class="sc-htoDjs IgGWb"
+              >
+                <p
+                  class="sc-bdVaJa ejRlfi"
+                />
+              </div>
+              <div
+                class="sc-htoDjs bScaTT"
+              >
+                <div
+                  class="sc-ifAKCX idlhrb"
+                  direction="column"
+                >
+                  <div
+                    class="sc-EHOje cAUkgB"
+                  >
+                    <input
+                      class="sc-bZQynM DRnwO"
+                      name="amount-undefined"
+                      type="number"
+                      value=""
+                      width="13.5rem"
+                    />
+                  </div>
+                  <div
+                    class="sc-EHOje fkfkya"
+                    height=".5rem"
+                  />
+                </div>
+              </div>
+              <div
+                class="sc-htoDjs bScaTT"
+              >
+                <div
+                  class="sc-EHOje dllnsp"
+                >
+                  <p
+                    class="sc-bdVaJa jktShC"
+                  >
+                    ➡
+                  </p>
+                </div>
+              </div>
+              <div
+                class="sc-htoDjs dDKvkC"
+              >
+                <p
+                  class="sc-bdVaJa ejRlfi"
+                >
+                   
+                </p>
+              </div>
+            </div>
+            <button
+              class="sc-bxivhb ewxeyt"
+              type="submit"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="sc-ifAKCX jnZHkZ"
+    >
+      <div
+        class="sc-EHOje fxFbyW"
+        width="100%"
+      >
+        <form>
+          <div
+            class="sc-EHOje cAUkgB"
+          >
+            <div
+              class="sc-ifAKCX fndciJ"
+            >
+              <div
+                class="sc-EHOje cAUkgB"
+              >
+                <p
+                  class="sc-bdVaJa cPeglz"
+                >
+                  Saldo: 
+                  undefined undefined
+                </p>
+              </div>
+              <div
+                class="sc-EHOje duAuhe"
+              >
+                <a
+                  class="sc-bwzfXH jkSlsb"
+                >
+                  Tudo
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="sc-gzVnrw eZFjIs"
+            height="auto"
+          >
+            <div
+              class="sc-htoDjs IgGWb"
+            >
+              <p
+                class="sc-bdVaJa ejRlfi"
+              />
+            </div>
+            <div
+              class="sc-htoDjs bScaTT"
+            >
+              <div
+                class="sc-ifAKCX idlhrb"
+                direction="column"
+              >
+                <div
+                  class="sc-EHOje cAUkgB"
+                >
+                  <input
+                    class="sc-bZQynM DRnwO"
+                    name="amount-undefined"
+                    type="number"
+                    value=""
+                    width="13.5rem"
+                  />
+                </div>
+                <div
+                  class="sc-EHOje fkfkya"
+                  height=".5rem"
+                />
+              </div>
+            </div>
+            <div
+              class="sc-htoDjs bScaTT"
+            >
+              <div
+                class="sc-EHOje dllnsp"
+              >
+                <p
+                  class="sc-bdVaJa jktShC"
+                >
+                  ➡
+                </p>
+              </div>
+            </div>
+            <div
+              class="sc-htoDjs dDKvkC"
+            >
+              <p
+                class="sc-bdVaJa ejRlfi"
+              >
+                 
+              </p>
+            </div>
+          </div>
+          <button
+            class="sc-bxivhb ewxeyt"
+            type="submit"
+          />
+        </form>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

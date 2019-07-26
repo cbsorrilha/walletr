@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import BalanceContext from '../contexts/balances';
+import ExchangeTemplate from '../components/templates/exchange';
 
 export default function Exchange() {
-  return <div>Here goes the exchange</div>;
+  return <ExchangeTemplate balances={useContext(BalanceContext)} />;
 }

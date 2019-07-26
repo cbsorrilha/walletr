@@ -18,6 +18,7 @@
     "react": "16.8.5",
     "react-dom": "16.8.5",
     "react-router-dom": "5.0.1",
+    "react-toast-notifications": "^2.2.1",
     "styled-components": "3.3.3"
   },
   "devDependencies": {

@@ -29,14 +29,10 @@ export async function getBalances() {
   }
 }
 
-export async function setBalance(coin, value) {
-  const balances = await db.get('balances');
+export async function setBalance(balances) {
+  const oldBalances = await db.get('balances');
 
-  if (!balances[coin]) {
-    throw new Error('Not a valid coin');
-  }
-
-  balances[coin] = value;
-
-  return db.put('balance');
+  const updated = await db.put({ ...oldBalances, ...balances });
+  balances._rev = updated.rev;
+  return balances;
 }
